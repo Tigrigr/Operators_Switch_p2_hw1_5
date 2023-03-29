@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -67,5 +68,33 @@ public class Main {
             System.out.println("Доставки нет");
         }
     }
-
+    public static void task5 () {
+        System.out.println();
+        System.out.println("Задача 5");
+        byte monthNumber = 25;
+        switch (monthNumber){
+            case 12:
+            case 1:
+            case 2:
+                System.out.println("Зима, одевайся теплее!");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Весна, нужны резиновые сапоги.");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Лето, пошли купаться!");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Осень, кушай витаминчики.");
+                break;
+            default:
+                System.out.println("Это по какому календарю?");
+        }
+    }
 }
