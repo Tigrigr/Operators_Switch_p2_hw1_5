@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -33,6 +34,18 @@ public class Main {
             }else {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке.");
             }
+        }
+    }
+    public static void task3 () {
+        System.out.println();
+        System.out.println("Задача 3");
+        short year = 1204;
+        int multipleOfFour = year % 4;
+        int multipleOfOnehundred = year % 100;
+        if (multipleOfOnehundred == 0 || multipleOfFour != 0 ){
+            System.out.println("Год  не високосный");
+        }else {
+            System.out.println("Год  високосный");
         }
     }
 }
